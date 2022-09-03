@@ -25,6 +25,7 @@ function AddInput({
     return (
         <div className="input-container">
             <input 
+                data-testid="input-task"
                 className="input" 
                 value={todo} 
                 onChange={(e) => setTodo(e.target.value)}
