@@ -7,8 +7,8 @@ function TodoFooter({
 }) {
     return (
         <div className="todo-footer">
-            <p>{numberOfIncompleteTasks} {numberOfIncompleteTasks === 1 ? "task" : "tasks"} left</p>
-            <p style={{opacity: 0}}>not visibile but in document</p>
+            <p role="paragraph">{numberOfIncompleteTasks} {numberOfIncompleteTasks === 1 ? "task" : "tasks"} left</p>
+            <div style={{opacity: 0}}>not visibile but in document</div>
             <Link to="/followers">Followers</Link>
         </div>
     )
